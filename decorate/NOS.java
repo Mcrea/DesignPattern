@@ -1,5 +1,5 @@
 package decorate;
-
+/**经典装饰类，可无限装饰下去*/
 public class NOS extends Decorate implements BattleShip{
 	public NOS (BattleShip bs) {
 		super.setBs(bs);
@@ -7,13 +7,11 @@ public class NOS extends Decorate implements BattleShip{
 
 	@Override
 	public String getDescription() {
-		// TODO Auto-generated method stub
-		return "拥有毁电能力的"+super.getBs().getDescription();
+		return "拥有毁电能力的" + super.getBs().getDescription();
 	}
 
 	@Override
 	public float getCost() {
-		// TODO Auto-generated method stub
-		return 0.1F+super.getBs().getCost();
+		return 0.1F + super.getBs().getCost();
 	}
 }

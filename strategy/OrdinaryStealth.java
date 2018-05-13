@@ -1,3 +1,5 @@
+package strategy;
+
 public class OrdinaryStealth implements Stealth{
     @Override
     public void active(){

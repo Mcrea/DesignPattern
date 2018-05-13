@@ -1,8 +1,11 @@
+package observer;
+
 /**
  * SimpleObserver implements Observer
  */
 public class SimpleObserver implements Observer {
     private String name;
+    //simpleSubject可以上移至父类，便于实现多态observer
     private Subject simpleSubject;
     public SimpleObserver(Subject subject, String name){
         this.simpleSubject = subject;
@@ -19,6 +22,6 @@ public class SimpleObserver implements Observer {
     };
     @Override
     public void update(Message message){
-        System.out.println(this.+"监听到了"+message.toString());
+        System.out.println(this.name + "监听到了" + message.toString());
     };
 }

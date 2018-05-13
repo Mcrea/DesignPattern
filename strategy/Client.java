@@ -1,3 +1,5 @@
+package strategy;
+
 public class Client{
 	public static void main(String[] args) {
 	    BattleShip typhoon = new Typhoon();
@@ -6,11 +8,9 @@ public class Client{
 	    panther.setStealthBehavior(new CovertActionDevice());
 	    typhoon.jump();
 	    panther.jump();
-	    System.out.println("panther active its stealth device while jumping ");
-	    panther.stealth();
+	    panther.activeStealth();
 	    System.out.println("both of them reach destination");
-	    System.out.println("typhoon active its stealth device after jump ");
-	    typhoon.stealth();
+	    typhoon.activeStealth();
 	    System.out.println("obviously,panther detects typhoon and typhoon detects nothing");
 	}
 }

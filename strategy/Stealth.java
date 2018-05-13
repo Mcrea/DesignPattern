@@ -1,3 +1,8 @@
+package strategy;
+/**
+ * 隐身装备接口*/
 public interface Stealth{
-    public void active();
+	/**
+	 * 激活隐身装备*/
+    void active();
 }
