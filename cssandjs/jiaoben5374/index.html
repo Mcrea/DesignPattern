@@ -1,0 +1,283 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>div css网站左侧分类菜单代码 - 站长素材</title>
+
+<style>
+* { margin: 0; padding: 0; }
+body { margin: 0; padding: 0; text-decoration: none; font-size: 14px; }
+li { list-style: none; }
+.menu { width: 1000px; height: 600px; margin: 30px auto; background-color: #ececec; }
+.menu .menuTop { background-color: #F10215; color: #fff; width: 140px; height: 40px; padding-left: 20px; line-height: 40px; cursor: pointer; }
+.menu ul { width: 160px; background-color: #fff; border: 2px solid #F10215; box-sizing: border-box; position: relative; }
+.menu ul li { height: 30px; padding-left: 8px; text-align: left; line-height: 30px; font-size: 13px; background: url(image/1.png) no-repeat right; z-index: 2; }
+.menu ul li a { color: #7070770; }
+.menu ul li a:hover { color: red; text-decoration: underline; cursor: pointer; }
+.menu ul li:hover { border: 1px solid #DDD; border-right: 0; background-image: none; }
+.menu ul li:hover .submenu { display: block; }
+.menu ul li:hover span { width: 30px; height: 30px; display: inline-block; background-color: #FFF; float: right; z-index: 100; position: relative; }
+.menu ul li .submenu { position: absolute; left: 146px; top: 0; width: 720px; height: 300px; border: 1px solid #DDD; box-shadow: 0 0 8px #DDD; -moz-box-shadow: 0 0 8px #DDD; -webkit-box-shadow: 0 0 8px #DDD; background-color: #FFF; z-index: 3; display: none; }
+.menu ul li .submenu .subleft { margin-left: 0px; width: 400px; height: 300px; float: left; padding: 5px; }
+.menu ul li .submenu .subleft dl { overflow: hidden; border-bottom: 1px solid #D1D1D1; padding: 10px 0; }
+.menu ul li .submenu .subleft dl dt { float: left; height: 22px; line-height: 22px; margin-right: 10px; font-weight: bold; color: #707070; font-size: 12px; cursor: pointer; }
+.menu ul li .submenu .subleft dl dd { }
+.menu ul li .submenu .subleft dl dd a { display: block; float: left; border-left: 1px solid #707070; padding: 0 5px; color: #707070; height: 14px; line-height: 14px; margin: 3px 0; font-size: 11px; }
+.menu ul li .submenu .subright { width: 310px; height: 300px; background-color: blue; float: left; }
+</style>
+
+</head>
+<body>
+<div class="menu">
+<div class="menuTop">全部商品分类</div>
+<ul>
+ 
+  <li> <a herf="javascript:;">一级标题 1</a> <span></span>
+	<div class="submenu">
+	  <div class="subleft">
+		<dl>
+		  <dt>二级标题111</dt>
+		  <dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+		</dl>
+		<dl>
+		  <dt>二级标题</dt>
+		  <dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+		</dl>
+		<dl>
+		  <dt>二级标题</dt>
+		  <dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+		</dl>
+		<dl>
+		  <dt>二级标题</dt>
+		  <dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+		</dl>
+	  </div>
+	  <div class="subright" style="background-color: antiquewhite"> </div>
+	</div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 2</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题222</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题2</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:aquamarine"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 3</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题333</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题3</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:cadetblue"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 4</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题444</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题4</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:darkgrey"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 5</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题555</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题5</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:darkseagreen"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 6</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题666</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题6</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:lavender"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 7</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题777</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题7</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 8</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题888</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题8</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:lightseagreen"> </div>
+  </li>
+  <li> <a herf="javascript:;">一级标题 9</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题999</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题9</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:mistyrose"> </div>
+  </li>
+  
+  
+  <li> <a herf="javascript:;">一级标题 10</a> <span></span>
+	<div class="submenu">
+	<div class="subleft">
+	  <dl>
+		<dt>二级标题1010</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+	  </dl>
+	  <dl>
+		<dt>二级标题</dt>
+		<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题10</a> </dd>
+	  </dl>
+	</div>
+	<div class="subright" style="background-color:salmon"> </div>
+  </li>
+  
+</ul>
+
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>
+
